@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0F0F0F; /* Background color */
+    color: #FFFFFF; /* Text color */
+}
+
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #39FF14; /* Header color */
+    text-shadow: 0 0 10px #39FF14, 0 0 20px #00FF00; /* Glowing effect */
+}
+
+.game {
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: repeat(4, 120px);
+    grid-row-gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameBoard div {
+    height: 150px;
+    width: 80px;
+    border: 2px solid #39FF14; /* Border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: white; /* Text color for cards */
+    background-color: #111; /* Card background color */
+    box-shadow: 0 0 20px #39FF14; /* Glowing effect for cards */
+}
+
+.cardback {
+    background-color: #111; /* Base color */
+    background-image: 
+        repeating-linear-gradient(45deg, rgba(255, 20, 147, 0.7), rgba(255, 20, 147, 0.7) 10px, transparent 10px, transparent 20px), /* Pink diagonal stripes */
+        radial-gradient(circle, #39FF14 15%, transparent 15%); /* Green circular dots */
+    background-size: 20px 20px, 10px 10px; /* Size of patterns */
+    box-shadow: 0 0 15px #FF1493, 0 0 25px #39FF14 inset; /* Glowing effect */
+}
+
+#gameBoard div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.won {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    color: #FF1493; /* Win message color */
+    text-shadow: 0 0 15px #FF1493, 0 0 30px #FF69B4; /* Glowing effect */
+}
+
+
+.copy{
+    color: #f00000;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
